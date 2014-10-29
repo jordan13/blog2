@@ -26,13 +26,15 @@
            //  this query will be executed, and will say true if it was successful and false if it was not
         if($query) {
         // we are doing this becuase we want to output a message
-              echo " Succesfully created datbase; " . $database; 
-              // we create this sentance and we use the dot operator to concatenate the databse
+              echo " Succesfully created datbase: " . $database; 
+              // we create this sentence and we use the dot operator to concatenate the databse
         }
 
     }
 
-
-
+     else {
+     	echo "Database has already been created.";
+     	// lets you know that data base has been created and exists
+     }
    $connection->close();
    // End of your connection variable
