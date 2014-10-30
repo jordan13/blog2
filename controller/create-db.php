@@ -42,6 +42,9 @@
       . "title varchar(255) NOT NULL,"
       . "post text NOT NULL"
       . "PRIMARY KEY  (id))");
+        if($query) {
+         echo "Succesfully created table: posts";
+     }
      // we are running a query on this database.
      // we are creating a table for posts.
      // this is a table that can store all the blog posts and save it on the data base.
@@ -53,5 +56,6 @@
   // since we are adding more than one id we need , 
   // Primary Key will let us select info from these posts, it is the way tables are connected to each other.
   // everything has to be set prior to being put in the table.
+
    $connection->close();
    // End of your connection variable
