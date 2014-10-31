@@ -5,7 +5,7 @@
   $connection = new mysqli($host, $username, $password);
 //  these variables are what you are checking for to have a succesful connection for.
   if($connection->connect_error) {
-  	    die("Error: " . $connectton->connect_error);
+  	    die("Error: " . $connectton->connect_error . "</php>");
   	    // Checking for connection, and lets you know if there was an error
   	    // If there was an error the program will "die" or stop running
   }
@@ -26,25 +26,31 @@
            //  this query will be executed, and will say true if it was successful and false if it was not
         if($query) {
         // we are doing this becuase we want to output a message
-              echo " Succesfully created datbase: " . $database; 
+              echo "<p> Succesfully created database: " . $database . "</php>"; 
               // we create this sentence and we use the dot operator to concatenate the databse
         }
 
     }
 
      else {
-     	echo "Database has already been created.";
+     	echo "<p>Database has already been created.</p>";
      	// lets you know that data base has been created and exists
      }
     
      $query = $connection->query("CREATE TABLE posts ("
-      . "id int(11) NOT NULL AURO_INCREMENT,"
+      . "id int(11) NOT NULL AUTO_INCREMENT,"
       . "title varchar(255) NOT NULL,"
-      . "post text NOT NULL"
+      . "post text NOT NULL,"
       . "PRIMARY KEY  (id))");
-        if($query) {
-         echo "Succesfully created table: posts";
-     }
+
+       
+    if($query) {
+         echo "Succesfully created table: $posts";
+    }
+    else {
+        echo "<p>$connection->error</p>";
+    }
+
      // we are running a query on this database.
      // we are creating a table for posts.
      // this is a table that can store all the blog posts and save it on the data base.
