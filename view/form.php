@@ -10,6 +10,11 @@
      <label for="post">Post: </label>
      <textarea name="post"></textarea>
      </div>
+
+     <div>
+      <button type="submit"> Submit </button>
+
+     </div>
  </form>
  <!-- we are creating a form -->
  <!--  we need sections for people to post things -->
