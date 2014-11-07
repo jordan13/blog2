@@ -1,3 +1,4 @@
+ <center>
  <h1> Create Blog Posts </h1>
 
  <form>
@@ -16,6 +17,7 @@
 
      </div>
  </form>
+ </center>
  <!-- we are creating a form -->
  <!--  we need sections for people to post things -->
  <!--  we are trying to align the names -->
