@@ -1,7 +1,13 @@
+ <?php 
+     require_once(__DIR__ . "/../model/config.php");
+      // we now have have acces to the path variable
+ ?>
+
  <center>
  <h1> Create Blog Posts </h1>
-
- <form>
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+ <form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
+ <!-- method is telling to send or recieve info -->
      <div>
        <label for="title">Title: </label>
        <input type="text" name="title" />

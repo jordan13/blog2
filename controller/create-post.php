@@ -2,8 +2,8 @@
     $title =  filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);
     $post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
 
-     echo "<p>Title: $title</p>")
-      echo "<p>Post: $post</p>");
+     echo "<p>Title: $title</p>";
+      echo "<p>Post: $post</p>";
 
     // input post means that we are sending info.
     // we are telling that line where too link and filter the posts
