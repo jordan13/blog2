@@ -1,5 +1,5 @@
 <?php
-     require_once(__DIR__ . "/../model/database.php");
+     require_once(__DIR__ . "/../model/config.php");
 
           $connection = new mysqli($host, $username, $password, $database);
       // usually when we create a connection,, we run querries on it.
