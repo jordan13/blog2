@@ -22,4 +22,16 @@ class Database {
     // we are putting all the info from the database to the construct function
     // the "this" variable is accessing the host variable up above with the private
     // we are joining all of these functions together
+
+     public function openConnection() {
+
+     }
+
+     public function closeConnection() {
+
+     }
+
+     public function query($string) {
+        
+      }
 }
