@@ -18,7 +18,7 @@ class Database {
         $this->password = $password;
         $this->database = $database;
     }
-    // the reason why it is public, is so you can access it in any file
+    // the reason why the functions are public, is so you can access it in any file
     // we are putting all the info from the database to the construct function
     // the "this" variable is accessing the host variable up above with the private
     // we are joining all of these functions together

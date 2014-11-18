@@ -8,7 +8,7 @@
       <!-- we can just edit info from the header or footer file -->
 
       <title></title>
-    </head>
+      </head>
       <body> 
       </body>
       </html>
