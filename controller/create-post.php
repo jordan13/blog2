@@ -23,8 +23,8 @@
           // an sql usually starts of with an action
           // basically we have to create a query that is ready to insert information
           // post is filtering the post section
-     echo "<p>Title: $title</p>";
-     echo "<p>Post: $post</p>"; 
+          echo "<p>Title: $title</p>";
+          echo "<p>Post: $post</p>"; 
 
     // input post means that we are sending info.
     // we are telling that line where too link and filter the posts

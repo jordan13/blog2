@@ -5,7 +5,7 @@
   $connection = new mysqli($host, $username, $password);
 //  these variables are what you are checking for to have a succesful connection for.
   if($connection->connect_error) {
-  	    die("Error: " . $connectton->connect_error . "</php>");
+  	    die("<php>Error: " . $connection->connect_error . "</php>");
   	    // Checking for connection, and lets you know if there was an error
   	    // If there was an error the program will "die" or stop running
   }
@@ -24,9 +24,9 @@
            // normally the action words will be in upper case
            // php will encounter the variable and it will see that this is a variable and will substitute the text
            //  this query will be executed, and will say true if it was successful and false if it was not
-        if($query) {
+    if($query) {
         // we are doing this becuase we want to output a message
-              echo "<p> Succesfully created database: " . $database . "</php>"; 
+            echo "<p> Succesfully created database: " . $database . "</php>"; 
               // we create this sentence and we use the dot operator to concatenate the databse
         }
 
