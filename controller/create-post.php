@@ -1,7 +1,6 @@
 <?php
      require_once(__DIR__ . "/../model/config.php");
 
-          $connection = new mysqli($host, $username, $password, $database);
       // usually when we create a connection,, we run querries on it.
       //all of these parameters are found within data base.php
 	  // my sqli is the connection to the data base
@@ -31,6 +30,6 @@
     // this alone is not 100% secure
     // we have created a controller that is going to recieve our input and store it.
     // we are now echoing them out
-          $connection->close();
-   // right now we are closing the connection
-   // we are just creating a new connection
+    // we do not need this anymore ->>> $connection->close();
+    // right now we are closing the connection
+    // we are just creating a new connection

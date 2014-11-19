@@ -9,6 +9,7 @@
  <form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
  <!-- method is telling to send or recieve info -->
      <div>
+     
        <label for="title"> <h1> Title: </h1></label>
        <input type="text" name="title" />
      </div>

@@ -2,8 +2,8 @@
      require_once(__DIR__ . "/../model/config.php");
      //  You are going back to the directory, to be directed to the model file.
 
-  $connection = new mysqli($host, $username, $password);
-//  these variables are what you are checking for to have a succesful connection for.
+    // we dont need this ---> $connection = new mysqli($host, $username, $password);
+   //  these variables are what you are checking for to have a succesful connection for.
   if($connection->connect_error) {
   	    die("<php>Error: " . $connection->connect_error . "</php>");
   	    // Checking for connection, and lets you know if there was an error
