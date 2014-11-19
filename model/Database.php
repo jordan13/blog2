@@ -46,6 +46,17 @@ class Database {
      }
 
      public function query($string) {
-        
+         // this line of code below is calling on the openConnection function
+         $this->openConnection();
+
+         $query = $this->connection->query($string);
+         // we use the arrow notation again because we need to access the query function
+         // we have now refactored the code and placed it here with a variable and we are using the query function
+         // we will now close our connection
+
+         $this->closeConnection();
+
+         return $query;
+         // we are returning the variable query because we want to know if it is true or false
       }
 }
