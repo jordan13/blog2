@@ -6,6 +6,8 @@
 		private $username;
 		private $password;
 		private $database;
+		public $error;
+// the reason the error file is public is so we can access it
 // we have created instance variables and global variables, we have also set the visibility
 // we wont be able to access these variables in any other file, only in these classes
 // this way when we create a new object, these variables are hidden and nobody else can access them and modify them
@@ -20,7 +22,7 @@
         
         $this->connection = new mysqli($host, $username, $password);
    //  these variables are what you are checking for to have a succesful connection for.
-   if ($this->$connection->connect_error) {
+   if($this->connection->connect_error) {
   	    die("<php>Error: " . $this->connection->connect_error . "</php>");
   	    // Checking for connection, and lets you know if there was an error
   	    // If there was an error the program will "die" or stop running
@@ -32,7 +34,7 @@
     // we add the !, because we are telling it that it does not exist.
     // the exclamation point inverts the true to false
     
-    if (!$exists) {
+    if(!$exists) {
     // we are checking wether or not we were able to connect to that data base
            $query = $this->connection->query("CREATE DATABASE $database");
            // query's are basically questions, you send questions or commands to the database,
@@ -89,6 +91,11 @@
          // we use the arrow notation again because we need to access the query function
          // we have now refactored the code and placed it here with a variable and we are using the query function
          // we will now close our connection
+         // this is checking wether or not this query is true or false
+         // if it is false we want the error
+         if(!$query) {
+             $this->error = $this->connection->error;
+         }
 
          $this->closeConnection();
 
