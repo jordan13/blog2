@@ -3,8 +3,8 @@
       // we now have have acces to the path variable
  ?>
  <center>
- <h1> The Blogantor </h1>
-  <img src="images/shop.gif" align: ; width: "10px" height: "9px">
+ <h1> The Bloganator </h1>
+ <img src="images/shop.gif" align: ; width: "10px" height: "9px">
  <link rel="stylesheet" type="text/css" href="css/style.css">
  <form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
  <!-- method is telling to send or recieve info -->
@@ -20,7 +20,7 @@
      </div>
 
      <div>
-      <button type="submit"> Submit </button>
+     <button type="submit"> Submit </button>
 
      </div>
  </form>
