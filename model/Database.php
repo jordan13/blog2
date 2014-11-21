@@ -21,12 +21,12 @@
         $this->database = $database;
         
         $this->connection = new mysqli($host, $username, $password);
-   //  these variables are what you are checking for to have a succesful connection for.
-   if($this->connection->connect_error) {
+    //  these variables are what you are checking for to have a succesful connection for.
+    if($this->connection->connect_error) {
   	    die("<php>Error: " . $this->connection->connect_error . "</php>");
   	    // Checking for connection, and lets you know if there was an error
   	    // If there was an error the program will "die" or stop running
-  }
+ 	}
   
     $exists = $this->connection->select_db($database);
     // we are trying to select the databse
@@ -53,7 +53,7 @@
      else {
      	echo "<p>Database has already been created.</p>";
      	// lets you know that data base has been created and exists
-     }
+      }
     
     }
     // the reason why the functions are public, is so you can access it in any file
@@ -101,5 +101,6 @@
 
      return $query;
          // we are returning the variable query because we want to know if it is true or false
-      }
-}
+       }
+     }
+ 

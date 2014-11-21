@@ -7,8 +7,8 @@
        <!-- we can insert stylesheets in here -->
       <!-- we can just edit info from the header or footer file -->
 
-      <title></title>
-      </head>
-      <body> 
-      </body>
-      </html>
+    <title></title>
+</head>
+<body> 
+</body>
+</html>
