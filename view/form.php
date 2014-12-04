@@ -1,7 +1,8 @@
  <?php 
      require_once(__DIR__ . "/../model/config.php");
       // we now have have acces to the path variable
- ?>
+      echo date('l \t\h\e jS');
+  ?>
 
  <center>
  <h1> The Bloganator </h1>
@@ -22,6 +23,7 @@
 
      <div>
      <button type="submit"> Submit </button>
+
 
      </div>
  </form>
