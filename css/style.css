@@ -1,6 +1,6 @@
 body{
 	background-color: red;
-	background-image: url("../images/pizza.jpg");
+	background-image: url("../images/wood.jpg");
 	background-attachment: fixed;
 	background-size: 100%;
 	-mox-background-size: contain; 
@@ -8,6 +8,11 @@ body{
      background-size: 100% 100%;
     background-repeat: no-repeat;
     position: center, fixed;
+
+}
+.term{
+    height: 150px;
+    width: 150px;
 
 }
 
