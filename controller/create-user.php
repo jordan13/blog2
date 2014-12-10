@@ -10,7 +10,26 @@
 
     $salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "$";
 
-    echo $salt;
+    $hashedPassword = crypt($password, $salt);
+
+    echo $hashedPassword = crypt($password, $salt);
+
+
+    echo $hashedPassword;
+
+    $query = $_SESSION["connection"]->query("INSERT INTO users SET "
+    	 . "email = '$email',"
+    	 . "username = '$username',"
+    	 . "password = '$hashedPassword',"
+    	 . "salt = '$salt'");
+
+  if($query){
+     echo "Succesfully created user: $username";
+  }
+  else {
+  	echo"<p>" . $_SESSION["connection"]->error . "</p>";
+  }
+    // we are telling the crypt function to use the password and salt together
     // we are telling it to use huge random numbers to create unique id's
     // uniqid creates unique ids for us and makes it random 
     // the minimum we should use is 5000 rounds
