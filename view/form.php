@@ -10,13 +10,8 @@
  <img src="images/form.png" class="term" align: ; width: "10px" height: "9px">
  <link rel="stylesheet" type="text/css" href="css/style.css">
  <form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
- <script language="javascript" type="text/javascript" src="/../read.js"></script>
-<script type="text/javascript>
  <!-- method is telling to send or recieve info -->
      <div>
-     
-
-        
        <label for="title"> <h1> Title: </h1></label>
        <input type="text" name="title" />
      </div>
@@ -28,8 +23,6 @@
 
      <div>
      <button type="submit"> Submit </button>
-
-
      </div>
  </form>
  </center>
