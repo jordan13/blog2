@@ -7,3 +7,18 @@
 
 	$query = $_SESSION["connection"]->query("SELECT salt, password FROM users WHERE username = '$username'");
 	// we are selecting our salt and our password from our users table where our username is the username that was sent in via the post
+	if($query->num_rows == 1) {
+		//num rows checks wether or not the rows are equal to 1	
+		$row = $query->fetch_array();
+		// we have to fetch the array stored in the quary var
+
+		if($row["password"] == crypt ($password, $row["salt"])) {
+      		echo "<p>Login Succesful </p>";
+		}
+		else {
+			echo "<p>Invalid username and password</p>";
+		}
+	}
+	else {
+		echo "<p> Invalid username and password</p>";
+	}
