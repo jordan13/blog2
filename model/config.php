@@ -1,6 +1,8 @@
 <?php
    require_once(__DIR__ . "/database.php");
    session_start();
+   session_regenerate_id(true);
+   // session regenerate regenerates the id every time the file is called on
   
 
    // we need to require once to link this file to the database

@@ -13,6 +13,7 @@
 		// we have to fetch the array stored in the quary var
 
 		if($row["password"] == crypt ($password, $row["salt"])) {
+      		$_SESSION["authenticated"] = true;
       		echo "<p>Login Succesful </p>";
 		}
 		else {
