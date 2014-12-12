@@ -1,5 +1,12 @@
  <?php 
      require_once(__DIR__ . "/../model/config.php");
+     require_once(__DIR__ . "/../controller/login-verify.php");
+
+     if(!authenticateUser()) {
+      header("Location: " . $path . "index.php");
+      // this only lets logged in users to post
+      die();
+     }
       // we now have have acces to the path variable
       echo date('l \t\h\e jS');
 
