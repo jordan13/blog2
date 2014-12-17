@@ -1,15 +1,15 @@
 <h1> <center id="news"> News Feed 
-<a href="https://twitter.com/?lang=en"><img src="images/tweet.png"></a> 
-<a href="https://www.facebook.com/"><img src="images/book.png"></a> 
-<a href="https://instagram.com/"><img src="images/instagram.png"></a> 
-<a href="https://mail.google.com/mail/"><img src="images/g.png"></a> 
+	<a href="https://twitter.com/?lang=en"><img src="images/tweet.png"></a> 
+	<a href="https://www.facebook.com/"><img src="images/book.png"></a> 
+	<a href="https://instagram.com/"><img src="images/instagram.png"></a> 
+	<a href="https://mail.google.com/mail/"><img src="images/g.png"></a> 
 </center> </h1> 
 <hr> </hr> 
 <div class="container"> 
-<img src="images/pic.jpg" class="term5" > 
-<h3> <right>  Bob Bobert </right> </h3>
-<br> <p> <h2> <top> Bio: </top> </h2> </br> </p>
-<p> <h4> The Name is Bob Bobert, this is my profile. I like to eat pizza and I like chickens. </h4> </p>
+	<img src="images/pic.jpg" class="term5" > 
+	<h3> <right>  Bob Bobert </right> </h3>
+	<br> <p> <h2> <top> Bio: </top> </h2> </br> </p>
+	<p> <h4> The Name is Bob Bobert, this is my profile. I like to eat pizza and I like chickens. </h4> </p>
 </div>
 <?php  
   	require_once(__DIR__ . "/controller/login-verify.php");
