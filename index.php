@@ -1,7 +1,14 @@
-<h1> <center id="news"> News Feed </center> </h1>
-
-<img src="images/pic.jpg" class="term2" > 
-<h3 class="term3"> <right>  Bob Bobert </right> </h3>
+<h1> <center id="news"> News Feed 
+<a href="https://twitter.com/?lang=en"><img src="images/tweet.png"></a> 
+<a href="https://www.facebook.com/"><img src="images/book.png"></a> 
+<a href="https://instagram.com/"><img src="images/instagram.png"></a> 
+</center> </h1> 
+<hr> </hr> 
+<div class="container"> 
+<img src="images/pic.jpg" class="term5" > 
+<h3> <right>  Bob Bobert </right> </h3>
+<br> <p> <h2> <center> About Me </center> </h2> </br> </p>
+</div>
 <?php  
   	require_once(__DIR__ . "/controller/login-verify.php");
   	require_once(__DIR__ . "/view/header.php");

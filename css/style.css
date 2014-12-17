@@ -16,12 +16,39 @@ body{
     width: 150px;
 
 }
+hr {
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: 30px auto;
+   height: 0;
+   width: 100%;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 0;
+   clear: both;
+   border: none;
+   border-top: 1px solid #aaaaaa;
+   border-bottom: 1px solid #ffffff;
+}
+.container{
+    border-color: black;
+    border-width: 40px;
+    font-family: ;
+    font-size: 25px;
+    color: grey;
+    border-style: solid;
+    border-width: 5px;
+    border-color: grey;
+    margin: 100px;
+    padding: 20px;
+}
 .term2{
     height: 150px;
     width: 150px;
     position: right;
     vertical-align: right;
-    margin: 5 auto;
+    margin: 40 auto;
     margin-left: 88.5%;
     border-color: black;
     margin-right: auto; 
@@ -33,10 +60,34 @@ body{
     text-align: right;
     margin: 5;
 }
-
+.term4{
+    height: 100px;
+    width: 200px;
+    position: right;
+    vertical-align: right;
+    margin: 40 auto;
+    margin-left: 40%;
+    border-color: black;
+    margin-right: auto; 
+     border: 0 none;
+     max-width: 100%;
+     size: custom;
 .morecontent span{
     display: none;
 }
+
+.term5{
+    height: 150px;
+    width: 150px;
+    position: left;
+    vertical-align: left;
+    margin: auto;
+    border-color: black;
+     border: 0 none;
+     max-width: 100%;
+     size: custom;
+}
+
 .morelink {
     display: block;
 }
