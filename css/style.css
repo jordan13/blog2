@@ -42,6 +42,7 @@ hr {
     border-color: grey;
     margin: 100px;
     padding: 20px;
+    height: 500px;
 }
 .term2{
     height: 150px;
@@ -82,7 +83,9 @@ hr {
     position: left;
     vertical-align: left;
     margin: auto;
+    margin-left: 20%;
     border-color: black;
+    margin-right: 40%; 
      border: 0 none;
      max-width: 100%;
      size: custom;

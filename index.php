@@ -7,7 +7,8 @@
 <div class="container"> 
 <img src="images/pic.jpg" class="term5" > 
 <h3> <right>  Bob Bobert </right> </h3>
-<br> <p> <h2> <center> About Me </center> </h2> </br> </p>
+<br> <p> <h2> <top> Bio: </top> </h2> </br> </p>
+<p> <h4> The Name is Bob Bobert, this is my profile. I like to eat pizza and I like chickens. </h4> </p>
 </div>
 <?php  
   	require_once(__DIR__ . "/controller/login-verify.php");
