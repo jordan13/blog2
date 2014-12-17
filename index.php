@@ -2,6 +2,7 @@
 <a href="https://twitter.com/?lang=en"><img src="images/tweet.png"></a> 
 <a href="https://www.facebook.com/"><img src="images/book.png"></a> 
 <a href="https://instagram.com/"><img src="images/instagram.png"></a> 
+<a href="https://mail.google.com/mail/"><img src="images/g.png"></a> 
 </center> </h1> 
 <hr> </hr> 
 <div class="container"> 
